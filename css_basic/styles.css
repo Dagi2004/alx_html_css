@@ -1,0 +1,20 @@
+body {
+  flex-direction: column;
+  display: flex;
+}
+main {
+  flex: auto;
+  flex-direction: row;
+  display: flex;
+}
+article {
+  overflow-y: auto;
+  flex: 2;
+}
+aside {
+  overflow-y: auto;
+  flex: 1;
+}
+.logo {
+  width: 30px;
+}
