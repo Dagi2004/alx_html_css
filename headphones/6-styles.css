@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  gap: 40px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+}
+.pentagon {
+  height: 0;
+  width: 160px;
+  border-left: 80px solid transparent;
+  border-top: 160px solid white;
+  border-right: 80px solid transparent;
+  position: relative;
+}
+.pentagon:before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 160px solid white;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  bottom: 160px;
+  left: -80px;
+}
